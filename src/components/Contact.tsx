@@ -7,7 +7,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: ["123 Pool Lane", "Swimming City, SC 12345"],
+    details: ["Kilimani, Nairobi"],
   },
   {
     icon: Phone,

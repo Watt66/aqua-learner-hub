@@ -12,12 +12,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (234) 567-8900"],
+    details: ["0721169055"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@aqualearnershub.com"],
+    details: ["daveltash6@gmail.com"],
   },
   {
     icon: Clock,

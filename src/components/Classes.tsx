@@ -8,6 +8,7 @@ const classes = [
     age: "Ages 4-12",
     description: "Fun, safe lessons designed to build water confidence and essential swimming skills in young learners.",
     duration: "45 min",
+    price: "KSh 1,500",
     features: ["Water safety basics", "Floating & kicking", "Stroke introduction", "Fun water games"],
     popular: true,
   },
@@ -17,6 +18,7 @@ const classes = [
     age: "Ages 13+",
     description: "Never too late to learn! Patient, personalized instruction for adults new to swimming.",
     duration: "60 min",
+    price: "KSh 1,500",
     features: ["Overcome water fear", "Breathing techniques", "Basic strokes", "Build confidence"],
     popular: false,
   },
@@ -26,6 +28,7 @@ const classes = [
     age: "All Ages",
     description: "One-on-one attention tailored to your specific goals and learning pace.",
     duration: "60 min",
+    price: "KSh 1,500",
     features: ["Personalized curriculum", "Flexible scheduling", "Faster progress", "Any skill level"],
     popular: false,
   },
@@ -76,9 +79,12 @@ const Classes = () => {
 
               <p className="text-muted-foreground mt-4 mb-6">{classItem.description}</p>
 
-              <div className="flex items-center gap-2 text-muted-foreground mb-6">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm">{classItem.duration} per session</span>
+              <div className="flex items-center justify-between text-muted-foreground mb-6">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm">{classItem.duration} per session</span>
+                </div>
+                <span className="text-lg font-bold text-primary">{classItem.price}</span>
               </div>
 
               <ul className="space-y-3 mb-8">
